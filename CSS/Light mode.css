@@ -1,5 +1,6 @@
 p{color: black;
-padding-left: 15px;}
+padding-left: 15px;
+font-size: 100%;}
 
 .item1 { grid-area: header;
 }
@@ -13,7 +14,7 @@ img{width: 100%;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 15% 30%;
+  grid-template-columns: 20% 40%;
   grid-template-rows: 10% 77% 10%;
   grid-template-areas:
     'menu header header header header header'
@@ -23,7 +24,7 @@ img{width: 100%;
   /*Grid border farge*/
   background-color: rgb(177, 177, 177);
   padding: 10px;
-  width: 98vw;
+  width: 97wh;
   height: 96vh;
   align-self: center;
 }
