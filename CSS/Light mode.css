@@ -1,12 +1,19 @@
 p{color: black;
 padding-left: 15px;
 font-size: 2vw;}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   p {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
  
 }
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 3.5vw;
+  }
+ 
+}
+
 
 .item1 { grid-area: header;
 }
@@ -67,7 +74,7 @@ height: 5%;}*/
   .button1:hover {
     transition-duration: 0.4s;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: rgb(3, 3, 112); 
     color: white;
     border-radius: 10px;
@@ -93,5 +100,13 @@ font-size: 50%;}
     font-size: 2.5vw;
     margin: 4px 2px;
     
+  }
+  .button1:hover {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 3vw;
+    background-color: rgb(3, 3, 112); 
+    color: white;
+    border-radius: 10px;
   }
 }
