@@ -11,6 +11,23 @@
 <script src="JS/Main.js"></script>
 </head>
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">Hjem</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="CV.html">Min CV</a>
+    <a href="Om_meg.html">Om meg</a>
+    <a href="Node_js_projekt.html">Node JS</a>
+    <a href="javascript:void(0);" onclick="myFunction()">Lys/Mørkt tema</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="navBar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
     
     <!--Boxen som deler siden-->
     <div class="grid-container">
@@ -27,7 +44,7 @@
            <button class="button button1" onclick="myFunction()">Lys/Mørk tema</button>
            
           <p> Ting eg har laget:</p>
-           <br><button onclick="location.href='CV.html'" class="button button1">Backend js med DB og API</button>
+           <br><button onclick="location.href='Node_js_projekt.html'" class="button button1">Backend js med DB og API</button>
 
         </div>
         <!--Hovedvindu her er hovedteksten midt i siden-->

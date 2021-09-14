@@ -1,19 +1,8 @@
 p{color: black;
 padding-left: 15px;
 font-size: 2vw;}
-@media screen and (max-width: 1200px) {
-  p {
-    font-size: 2.5vw;
-  }
- 
-}
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 3.5vw;
-  }
- 
-}
 
+.topnav{display: none;}
 
 .item1 { grid-area: header;
 }
@@ -90,23 +79,102 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 font-weight: 100;
 font-size: 50%;}
 
-@media screen and (max-width: 600px) {
+/*teksten skalerer alltid men 1200px går til annen størelse for nettbrett skjermer og 600px blir til tlf størrelser*/
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 2.5vw;
+  }
   .button {
     border: none;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     margin: 4px 2px;
     
   }
+  
   .button1:hover {
     transition-duration: 0.4s;
     cursor: pointer;
-    font-size: 3vw;
+    font-size: 2.8vw;
     background-color: rgb(3, 3, 112); 
     color: white;
     border-radius: 10px;
   }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .item2{
+    display: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0% 90%;
+    grid-template-rows: 10% 78% 10%;
+    grid-template-areas:
+      'header header header header header header'
+      'main main main main main main'
+      'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    /*Grid border farge*/
+    background-color: rgb(177, 177, 177);
+    padding: 10px;
+    width: 97wh;
+    height: 96vh;
+    align-self: center;
+  }
+  
+  
+
+  p {
+    font-size: 4vw;
+  }
+  img{display: none;}
+
+  /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display: block;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: blue;
+  color: white;
+}
 }

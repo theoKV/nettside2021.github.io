@@ -1,0 +1,43 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjem
+    </title>
+    <link rel="shortcut icon" href="Bilder/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" id="stylesheet" type="text/css" href="CSS/Light mode.css">
+<script src="JS/Main.js"></script>
+</head>
+
+<!--Boxen som deler siden-->
+<div class="grid-container">
+    <div class="item1">
+        <h1>Node.js siden min
+        </h1> 
+    </div>
+    <!--Knapper til menyen skal her-->
+    <div class="item2">
+        <!--Linker til andre sider-->
+       <br><button onclick="location.href='index.html'" class="button button1">Hjem</button>
+       <br><button onclick="location.href='CV.html'" class="button button1">CV</button>
+       <br><button onclick="location.href='Om_meg.html'" class="button button1">Om meg</button>
+       <button class="button button1" onclick="myFunction()">Lys/Mørk tema</button>
+       
+      <p> Ting eg har laget:</p>
+       <br><button onclick="location.href='CV.html'" class="button button1">Backend js med DB og API</button>
+
+    </div>
+    <!--Hovedvindu her er hovedteksten midt i siden-->
+    <div class="item3"><p>
+        Når eg var på praksis hos Miles lagde eg dette programmet. <br>
+        Programmet er laget i frameworket node.js med en god del dependencies. <br>
+        Den bruker en sql database(bilde til høyre) <br>
+        Det er ca 500 linjer langt inkludert kommentarer, <br> 
+        så du trenger ikke å lese den, men kildekode er nederst <br> for spesielt interesserte
+        <form method="get" action="kildeKode.txt">
+        <button type="submit">Se kilde kode</button>
+     </form></p> </div> 
+    <!--Egen rute til belder-->
+    <div class="item4"><img src="Bilder/Db.png" onclick="CV.html" alt=""></div> 
+    <div class="item5"><h3>Footer</h3></div>
+  </div>
