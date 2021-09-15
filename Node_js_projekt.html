@@ -9,21 +9,27 @@
 <script src="JS/Main.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<!-- Top Navigation Menu -->
+<body>
+  
+<!-- Hoved baren og hjem knapp -->
 <div class="topnav">
-    <a href="index.html" class="active">Hjem</a>
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-      <a href="CV.html">Min CV</a>
-      <a href="Om_meg.html">Om meg</a>
-      <a href="Node_js_projekt.html">Node JS</a>
-      <a href="javascript:void(0);" onclick="myFunction()">Lys/Mørkt tema</a>
-    </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="navBar()">
-      <i class="fa fa-bars"></i>
-    </a>
+  <a href="index.html" class="active">Hjem</a>
+  <!-- Linker-->
+  <div id="myLinks">
+    <a href="CV.html">Min CV</a>
+    <a href="Om_meg.html">Om meg</a>
+    <a href="Node_js_projekt.html">Node JS</a>
+    <a href="javascript:void(0);" onclick="myFunction()">Lys/Mørkt tema</a>
   </div>
+  <!-- Js function som toggler -->
+  <a href="javascript:void(0);" class="icon" onclick="navBar()">
+    <!--Ikon-->
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
 <!--Boxen som deler siden-->
 <div class="grid-container">
     <div class="item1">
@@ -56,3 +62,4 @@
     <div class="item4"><img src="Bilder/Db.png" onclick="CV.html" alt=""></div> 
     <div class="item5"><h3>Footer</h3></div>
   </div>
+</body>

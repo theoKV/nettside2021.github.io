@@ -1,4 +1,4 @@
-p{color: greenyellow;
+p{color: rgb(47, 255, 64);
   padding-left: 15px;
   font-size: 2vw;}
   
@@ -26,7 +26,6 @@ p{color: greenyellow;
     /*Grid border farge*/
     background-color: rgb(5, 5, 5);
     padding: 10px;
-    width: 97wh;
     height: 96vh;
     align-self: center;
   }
@@ -70,7 +69,7 @@ p{color: greenyellow;
     }
     
   h1{
-  color: lightgreen;
+  color: rgb(0, 255, 0);
   text-align: center;
   font-size: 40px;
   }
@@ -167,13 +166,18 @@ p{color: greenyellow;
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(204, 0, 0);
+    color: rgb(255, 255, 255);
   }
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: rgb(216, 0, 0);
-    color: white;
+    background-color: rgb(116, 0, 0);
+    color: rgb(168, 168, 168);
   }
+  
+  .topnav a.icon:hover {background: gray;
+
+  }
+
   }
