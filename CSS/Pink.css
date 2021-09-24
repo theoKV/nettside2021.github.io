@@ -77,7 +77,8 @@ p{color: white;
     }
     h3{ text-align: center;
     font-weight: 100;
-    font-size: 50%;}
+    font-size: 50%;
+  color: azure;}
     
     /*teksten skalerer alltid men 1200px går til annen størelse for nettbrett skjermer og 600px blir til tlf størrelser*/
     @media screen and (max-width: 1200px) {
