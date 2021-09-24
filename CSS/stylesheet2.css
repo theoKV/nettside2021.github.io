@@ -18,6 +18,7 @@ p{color: rgb(211, 211, 211);
   }
   .grid-container {
     display: grid;
+    /*selv om det er flere områder vil den gå automatisk til auto om eg ikke fyller de. så de fyller hele skjermen uansett*/
     grid-template-columns: 20% 40%;
     grid-template-rows: 10% 77% 10%;
     /*inndeling av grid områdene, visualisert etter hvor forkjellige id-er ligger. 6*3 område */
