@@ -1,0 +1,44 @@
+.hinder{
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    display: none;
+    margin:0px; 
+    border-radius: 50%;
+}
+h1{
+    color: rgb(255, 0, 0);
+    position:static;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    
+        
+    
+}
+.wrapper div {
+    position: absolute;
+}
+
+button{
+    width: 8vw;
+    font-size: 3vw;
+    margin-left: 170px;
+}
+.MSG{
+    background-color: gray;
+    margin:auto;
+    width: 500px;
+    height: 300px;
+}
+p{
+    font-size: xx-large;
+}
+h4{
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+    font-size: 500%;
+}
