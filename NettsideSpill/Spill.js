@@ -22,6 +22,8 @@ document.getElementById("hinder1").style.display = "block";
 
 document.getElementById('hinder').style.left = x+'px'
 document.getElementById('hinder1').style.left = x+'px'
+
+//funker som en loop, kjører 60 ganger i sekundet
 var interval0 = window.setInterval(function(){
   
   //definerer div-en for å legge til en eventListener
