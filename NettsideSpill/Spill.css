@@ -1,14 +1,15 @@
 .hinder{
     width: 800px;
-    height: 700px;
+    height: 800px;
     background-color: black;
     position: fixed;
     z-index: -1;
     display: none;
     margin:0px; 
+    border-radius: 50%;
 }
 h1{
-    color: red;
+    color: rgb(255, 0, 0);
     position:static;
 }
 body{
@@ -34,4 +35,10 @@ button{
 }
 p{
     font-size: xx-large;
+}
+h4{
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+    font-size: 500%;
 }

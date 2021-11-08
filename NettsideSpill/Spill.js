@@ -2,7 +2,7 @@
 document.getElementById("reset").style.display = "none";
 let poeng = 0;
 let highscore = 0;
-//må være glob for at scopsene skal sende y verdien oppover
+//må være global for at scopsene skal sende y verdien oppover
 globalThis.y = 100
 
 function start(){
@@ -11,7 +11,7 @@ function start(){
   //viser scoreboard på start også for at UI skal oppdatere etter reset
 document.getElementById('scoreBoard').innerHTML ="Poeng : " + poeng 
 //skjuler reset og start knapp når start functionen kjører
-document.getElementById("test").style.display = "none";
+document.getElementById("start").style.display = "none";
 document.getElementById("reset").style.display = "none";
 document.getElementById("start").style.display = "none";
 //viser hinderene etter spillet starter
@@ -30,29 +30,38 @@ var interval0 = window.setInterval(function(){
   //Ser om musepekeren er i boksen
   div.addEventListener('mouseenter', function(){
     console.log("DEATH!?")
+    //stopper spillet
     clearInterval(interval0)
     clearInterval(interval1)
-    //viser start knappen på nytt og resetter poeng summen
+    //viser reset knappen og starter spillet på nytt
     document.getElementById("reset").style.display = "block";
     poeng = 0;
     
   }, false);
+  //gir navn til et av hinderene
   var div1 = document.getElementById('hinder1');
+  //ser om musen er i boksen
   div1.addEventListener('mouseenter', function(){
     console.log("DEATH!?")
-    //stopper loopen vis pekeren er i boksen
+    //stopper loopen og poeng tellingen
     clearInterval(interval0)
     clearInterval(interval1)
+    //viser reset knappen
     document.getElementById("reset").style.display = "block";
+    //resetter score
     poeng = 0;
 
   }, false);
+  
+  //poeng øker hastigheten til hinderene
+  var hastighet = 12.2*(poeng/50+1)
+         y= y+hastighet;
+         //setter y posisjonen til hinderene til hastighet variabelen
 document.getElementById('hinder').style.top = y+'px'
 document.getElementById('hinder1').style.top = y+'px'
-var hastighet = 12.2*(poeng/50+1)
-         y= y+hastighet
 
 
+//timeren på hvor ofte koden kjører, må være litt høy for å unngå lag
 },16.7);
 
 
@@ -62,18 +71,25 @@ var interval1 = window.setInterval(function(){
   document.getElementById('hinder').style.left = x+'px'
   var x = Math.random()*1800
   document.getElementById('hinder1').style.left = x+'px'
+  
+  //Setter posisjonen til toppen
   globalThis.y = -900;
- /* myLoop();*/  
-  console.log("foreverloop")
+  //legger til et poeng
   poeng = poeng+1
+  //hvis poengene er høyere en highscoren, endre highscoren
   if(poeng > highscore){
     highscore = poeng
   }
+  //oppdaterer scoreboard og highscore
   document.getElementById('scoreBoard').innerHTML ="Poeng : " + poeng ;
   document.getElementById('highscore').innerHTML ="Rekord : " + highscore ;
- if(poeng < 100){
-  document.body.style= `background-color: rgb(${255-poeng*2}, ${255-poeng*2}, ${255-poeng*2})`
- }
+  
+  //dette er en if for å unngå att bakgrunnenblir for endret
+ //if(poeng < 100){
+   //endrer fargen basert på poengsum
+  //document.body.style= `background-color: rgb(${50+poeng*2}, 0, 0)`
+ //}
+ //tiden det tar for boksene å fly forbi
 }, 2400-poeng*20);
 
 
