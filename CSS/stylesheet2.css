@@ -1,5 +1,6 @@
 p{color: rgb(211, 211, 211);
   padding-left: 15px;
+  text-align: center;
   font-size: 2vw;}
   
   .topnav{display: none;}
@@ -9,13 +10,33 @@ p{color: rgb(211, 211, 211);
   .item1 { grid-area: header;
   }
   .item2 { grid-area: menu;
+    height: auto;
   width: 100%; }
   .item3 { grid-area: main; }
-  .item4 { grid-area: Picture;}
+  .item4 { grid-area: Picture;
+  width: min-content;}
   .item5 { grid-area: footer;}
-  img{width: 100%;
+  img{
+    transition-duration:0.4s ;
+    width: auto;
+    height:50%;
+    float: right;
+    
   /* for runde hjørner på bildet border-radius: 100px;*/
   }
+  /*Bilde endrer seg når pekeren er over den*/
+  img:hover{
+    
+    height: 79%;
+    width: auto;
+    position:absolute;
+    border: 0px solid red;
+right:0%;
+top:1%;
+
+
+  }
+
   .grid-container {
     display: grid;
     /*selv om det er flere områder vil den gå automatisk til auto om eg ikke fyller de. så de fyller hele skjermen uansett*/
@@ -24,11 +45,11 @@ p{color: rgb(211, 211, 211);
     /*inndeling av grid områdene, visualisert etter hvor forkjellige id-er ligger. 6*3 område */
     grid-template-areas:
       'header header header header header header'
-      'menu main main main Picture Picture'
+      'menu main main main main Picture'
       'footer footer footer footer footer footer';
     grid-gap: 10px;
     /*Grid border farge*/
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(51, 51, 51);
     padding: 10px;
     height: 96vh;
     align-self: center;
@@ -37,7 +58,7 @@ p{color: rgb(211, 211, 211);
   height: 5%;}*/
   .grid-container > div {
     background-color: rgb(51, 51, 51);
-    color: black;
+    
     text-align: left;
     padding: 0px 0;
     font-size: 30px;
@@ -60,6 +81,7 @@ p{color: rgb(211, 211, 211);
       background-color: rgb(116, 0, 0); 
       color: rgb(168, 168, 168); 
       border-radius: 100px;
+      
       border: 2px solid black;
     }
     /*Knappen i menyen  når du holder over den*/
@@ -76,6 +98,12 @@ p{color: rgb(211, 211, 211);
   color: rgb(211, 211, 211);
   text-align: center;
   font-size: 40px;
+  }
+  h2{
+    color: rgb(211, 211, 211);
+  padding-left: 15px;
+  text-align: center;
+  font-size: 2vw;
   }
   h3{ text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
