@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,16 +10,27 @@
     
 </head>
 <body>
-<div class="wrapper div"><h1 id="scoreBoard">Poeng : 0</h1> <h1 id="highscore">Rekord : 0</h1></div>    
-
+    <!--poeng teller-->
+<div class="wrapper div"><h1 id="scoreBoard">Poeng : 0</h1> <h1 id="highscore">Rekord : 0</h1>
     
+</div>    
+
+    <!--reset knapp som kjører start javascipt funksjonen-->
    <div class="MSG" id="reset"> <p>Du tapte!</p>
- <button id="reset" onclick="start()">reset</button> </div>
+        <button id="reset" onclick="start()">Reset</button> <br>
+        <!--hjem knapp-->
+<button onclick="location.href='../index.html'" class="button button1">Hjem</button>
+    </div>
+    <!--bombe en og to-->
     <div id="hinder" class="hinder"><h4>Bomben</h4></div>
     <div id="hinder1" class="hinder"><h4>Bomba</h4></div>
+    <!--info tekst og start knappen-->
     <div id="start" class="MSG"><p>I dette spillet er musepekeren viktig. Målet er å dra musepekeren vekk ifra bombene som faller ned. Det vil bli vanskeligere og vanskeligere ettersom boksene vil gå fortere!</p>
-        <button id="start" onclick="start()">start</button>
-    </div>
+    <button id="start" onclick="start()">Start</button>
+    <!--hjem knapp-->
+    <button onclick="location.href='../index.html'" class="button button1">Hjem</button>
+</div>
+
 </body>
 </html>
 <script src="Spill.js"></script>

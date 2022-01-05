@@ -92,11 +92,10 @@ var interval1 = window.setInterval(function(){
   //oppdaterer scoreboard og highscore
   document.getElementById('scoreBoard').innerHTML ="Poeng : " + poeng ;
   document.getElementById('highscore').innerHTML ="Rekord : " + highscore ;
-  
-  //dette er en if for å unngå att bakgrunnenblir for endret
- //if(poeng < 100){
-   //endrer fargen basert på poengsum
-  //document.body.style= `background-color: rgb(${50+poeng*2}, 0, 0)`
+ //dette er en if for å unngå att bakgrunnenblir for endret          
+ //if(poeng < 100){                                                  
+ //endrer fargen basert på poengsum                                   
+ //document.body.style= `background-color: rgb(${50+poeng*2}, 0, 0)`
  //}
  //tiden det tar for boksene å fly forbi
 }, 2000-poeng*20);
